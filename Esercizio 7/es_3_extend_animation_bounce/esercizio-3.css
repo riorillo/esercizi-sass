@@ -16,7 +16,6 @@
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  background-color: red;
 }
 .container .bounce {
   -webkit-animation-name: bounce;
@@ -55,4 +54,4 @@
   100% {
     transform: translateY(0);
   }
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=esercizio-3.css.map */

@@ -10,7 +10,8 @@ div {
 div h1 {
   color: green;
   text-decoration: underline;
-  text-decoration-color: blue;
+  -webkit-text-decoration-color: blue;
+          text-decoration-color: blue;
 }
 div section {
   display: flex;
@@ -25,14 +26,12 @@ div section article p {
   margin: auto;
 }
 div section article:nth-child(even) {
-  border: 1px solid green;
+  border: 0.0625rem solid green;
   color: red;
   font-size: 1rem;
 }
 div section:nth-child(3) article {
-  border: 1px solid blue;
+  border: 0.0625rem solid blue;
   color: green;
   font-size: 1.5rem;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

@@ -6,40 +6,38 @@
   flex: 1;
 }
 .container .col:nth-child(12) {
-  background-color: #666bd6;
+  background-color: #16578c;
 }
 .container .col:nth-child(11) {
-  background-color: #4e98df;
+  background-color: #8bc484;
 }
 .container .col:nth-child(10) {
-  background-color: #a381c8;
+  background-color: #9c2cb9;
 }
 .container .col:nth-child(9) {
-  background-color: #b21c6d;
+  background-color: #cbd73a;
 }
 .container .col:nth-child(8) {
-  background-color: #79da9e;
+  background-color: #65e6be;
 }
 .container .col:nth-child(7) {
-  background-color: #fbcc1d;
+  background-color: #47d1dd;
 }
 .container .col:nth-child(6) {
-  background-color: #e1648c;
+  background-color: #1e2a1f;
 }
 .container .col:nth-child(5) {
-  background-color: #58798c;
+  background-color: #f67cee;
 }
 .container .col:nth-child(4) {
-  background-color: #be4eeb;
+  background-color: #adc3c5;
 }
 .container .col:nth-child(3) {
-  background-color: #fbd8e4;
+  background-color: #114d3b;
 }
 .container .col:nth-child(2) {
-  background-color: #492aca;
+  background-color: #4e55eb;
 }
 .container .col:nth-child(1) {
-  background-color: #dba99e;
-}
-
-/*# sourceMappingURL=style.css.map */
+  background-color: #97872f;
+}/*# sourceMappingURL=style.css.map */

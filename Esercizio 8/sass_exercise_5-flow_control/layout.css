@@ -1,41 +1,41 @@
-div {
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 1px solid red;
+  border: 0.0625rem solid red;
   gap: 1rem;
   padding: 1rem;
 }
-div h1, div h2 {
+.container h1, .container h2 {
   color: green;
   text-decoration: underline;
   -webkit-text-decoration-color: blue;
           text-decoration-color: blue;
 }
-div h2 {
+.container h2 {
   padding: 1rem;
-  border: 1px solid red;
+  border: 0.0625rem solid red;
 }
-div section {
+.container section {
   display: flex;
 }
-div section article {
+.container section article {
   border: 1px solid green;
   color: blue;
   font-size: 1rem;
   padding: 1rem;
 }
-div section article p {
+.container section article p {
   margin: auto;
 }
-div section article:nth-child(even) {
+.container section article:nth-child(even) {
   border: 1px solid green;
   color: red;
   font-size: 1rem;
 }
-div section:nth-child(3) article {
+.container section:nth-child(5) article {
   border: 1px solid blue;
   color: green;
   font-size: 24px;
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=layout.css.map */

@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin bounce ($name, $timing-function, $iteration, $duration, $starting-point: 0, $peak: -100px) {
+
+    animation-name: $name;
+    animation-timing-function: $timing-function;
+    animation-iteration-count: $iteration;
+    animation-duration: $duration;
+
+    @keyframes bounce{
+        0% {transform: translateY($starting-point);}
+        40% {transform: translateY($peak);}
+        60% {transform: translateY($peak / 2);}
+        100% {transform: translateY($starting-point)}
+    }
+    
+}
+
+.container{
+    height: 300px;
+    margin: 1rem;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    .box{
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+    }
+    .bounce{
+        @include bounce(bounce, linear, infinite, 1s);
+    }
+}
+

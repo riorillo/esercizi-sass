@@ -1,7 +1,7 @@
 @use 'converter';
 @use 'variables';
 
-@mixin article-card ($thickness: 1px, $style: solid, $color: green, $font-size: 1rem, $font-color: blue) {
+@mixin article-card ($thickness: converter.pxtorem(1px), $style: solid, $color: green, $font-size: 1rem, $font-color: blue) {
     border: $thickness $style $color;
     color: $font-color;
     font-size: $font-size;

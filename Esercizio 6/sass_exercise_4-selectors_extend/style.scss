@@ -8,12 +8,6 @@ $color-tertiary: green;
     font-size: $font-size;
 }
 
-%text{
-    color: $color-tertiary;
-    text-decoration: underline;
-    text-decoration-color: $color-secondary; 
-}
-
 div{
     display: flex;
     flex-direction: column;
@@ -22,19 +16,19 @@ div{
     border: 1px solid $color-primary;
     gap: 1rem;
     padding: 1rem;
-    h1{
+    & h1{
         color: $color-tertiary;
         text-decoration: underline;
         text-decoration-color: $color-secondary;
     }
-    h2{ 
-        @extend %text;
+    & h2{ 
+        @extend h1;
         padding: 1rem;
         border: 1px solid $color-primary;
     }
-    section{
+    & section{
         display: flex;
-        article{
+        & article{
             @include article-card;
             padding: 1rem;
             p{
