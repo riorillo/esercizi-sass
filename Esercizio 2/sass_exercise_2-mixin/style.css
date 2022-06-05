@@ -1,0 +1,55 @@
+div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid red;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+div h1 {
+  color: green;
+  text-decoration: underline;
+  -webkit-text-decoration-color: blue;
+          text-decoration-color: blue;
+}
+
+div section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+div section article {
+  border: 1px solid green;
+  color: blue;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+div section article p {
+  margin: auto;
+}
+
+div section article:nth-child(even) {
+  border: 1px solid green;
+  color: red;
+  font-size: 1rem;
+}
+
+div section:nth-child(3) article {
+  border: 1px solid blue;
+  color: green;
+  font-size: 24px;
+}
+/*# sourceMappingURL=style.css.map */

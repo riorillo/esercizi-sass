@@ -1,0 +1,42 @@
+@use 'converter';
+@use 'variables';
+
+@mixin article-card ($thickness: 1px, $style: solid, $color: green, $font-size: 1rem, $font-color: blue) {
+    border: $thickness $style $color;
+    color: $font-color;
+    font-size: $font-size;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: converter.pxtorem(1px) solid variables.$color-primary;
+    gap: converter.pxtorem(16px);
+    padding: converter.pxtorem(16px);
+    h1{
+        color: variables.$color-tertiary;
+        text-decoration: underline;
+        text-decoration-color: variables.$color-secondary;
+    }
+    section{
+        display: flex;
+        article{
+            @include article-card($thickness: converter.pxtorem(1px));
+            padding: converter.pxtorem(16px);
+            p{
+                margin: auto;
+            }
+            &:nth-child(even){
+                @include article-card($font-color: variables.$color-primary)
+            }
+        }
+        &:nth-child(3){
+            article{
+                @include article-card($color: variables.$color-secondary, $font-color: variables.$color-tertiary, $font-size: converter.pxtorem(24px))
+            }
+        }
+        
+    }
+}
